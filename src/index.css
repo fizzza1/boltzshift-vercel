@@ -28,12 +28,12 @@ h1{
 
 h2{
   font-weight: bold;
-  font-size: 56px;
+  font-size: 52px;
 }
 
 h3{
   font-weight: bold;
-  font-size: 48px;
+  font-size: 28px;
 }
 
 
@@ -44,7 +44,7 @@ h4{
 
 h5{
   font-weight: 400;
-  font-size: 32px;
+  font-size: 15px;
 }
 
 h6{
@@ -56,3 +56,94 @@ p{
   font-weight: 400;
   font-weight: 18px;
 }
+
+
+.yolk{
+  color: var(--primary-color);
+}
+
+.dull{
+  color: var(--paragraph-color);
+}
+
+.black{
+  color: var(--black);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #FFD700, #FFA500, #FFCC00);
+
+  border-radius: 8px;
+}
+
+
+/* date-picker css */
+
+
+.react-datepicker__day--selected{
+  background-color: var(--primary-color) !important;
+  color: var(--black) !important;
+  border-radius: 100% !important;
+  outline: none;
+}
+
+.react-datepicker__week{
+  font-family: "Clash Grotesk";
+}
+
+.react-datepicker__current-month{
+  font-family: "Clash Grotesk";
+  font-size: 54px !important;
+}
+
+.react-datepicker__header {
+  width: 600px;
+  /* height: 136px; */
+}
+
+.react-datepicker{
+  /* margin-top: 300px !important; */
+}
+
+.react-datepicker__input-container{
+  display: none !important;
+}
+
+
+.react-datepicker__day-names{
+  font-family: "Clash Grotesk";
+}
+
+.react-datepicker__time-list{
+  font-family: "Clash Grotesk";
+  font-size: 10px;
+}
+
+.react-datepicker-time__header{
+  font-family: "Clash Grotesk";
+
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select){
+  width: 100%;
+}
+
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+  background-color: #FAD008 !important;
+  color: black !important;
+  padding-top: 10px !important;
+}
+
+/* date-picker css */
