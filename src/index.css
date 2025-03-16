@@ -8,6 +8,7 @@
   --black: #07070A;
   --primary-color: #FAD008;
   --paragraph-color:#A5A5A5;
+  --button-color:#39393B;
 
 }
 
@@ -28,7 +29,7 @@ h1{
 
 h2{
   font-weight: bold;
-  font-size: 56px;
+  font-size: 28px;
 }
 
 h3{
@@ -55,4 +56,23 @@ h6{
 p{
   font-weight: 400;
   font-weight: 18px;
+}
+
+.yellow{
+  color: var(--primary-color);
+}
+
+.black{
+  color: var(--black);
+}
+
+.white{
+  color: var(--white);
+}
+
+.grey{
+  color: var(--paragraph-color);
+}
+.button-color{
+  color: var(--button-color);
 }
