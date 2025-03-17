@@ -2,12 +2,17 @@ import "./App.css";
 import BookingPage from "./pages/Components/BookingPage";
 import TestimonialPage from "./pages/Components/TestimonialPage";
 
-function App() {
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import Home from "./Pages/Home/home";
 
+function App() {
   return (
     <>
-      <BookingPage/>
-      <TestimonialPage />
+      <div>
+        <Home />
+      </div>
     </>
   );
 }

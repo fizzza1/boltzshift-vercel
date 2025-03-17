@@ -5,9 +5,10 @@ import testimonialSign from "../assets/testimonial-sign.svg";
 
 function Testimonials() {
   return (
-
-    <div className="grid grid-cols-1">
-      <div className="bg-white flex flex-col justify-center p-[30px] mt-[40px]">
+<div>
+    
+    <div className="grid grid-cols-1 mb-30">
+      <div className="bg-white flex flex-col justify-center p-[30px] mt-6">
         <div className=" flex justify-end mt-[-50px]">
           <img className="w-20 " src={testimonialSign} alt="" />
         </div>
@@ -35,6 +36,7 @@ function Testimonials() {
         </div>
       </div>
     </div>
+</div>
 
   );
 }

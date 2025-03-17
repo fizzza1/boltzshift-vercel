@@ -8,6 +8,7 @@
   --black: #07070A;
   --primary-color: #FAD008;
   --paragraph-color:#A5A5A5;
+  --button-color:#39393B;
 
 }
 
@@ -28,7 +29,11 @@ h1{
 
 h2{
   font-weight: bold;
-  font-size: 52px;
+/* <<<<<<< HEAD */
+  /* font-size: 52px; */
+/* ======= */
+  font-size: 28px;
+/* >>>>>>> origin/fizza */
 }
 
 h3{
@@ -57,6 +62,11 @@ p{
   font-weight: 18px;
 }
 
+#root-portal {
+  position: relative;
+  z-index: 1000;
+}
+
 
 .yolk{
   color: var(--primary-color);
@@ -66,9 +76,15 @@ p{
   color: var(--paragraph-color);
 }
 
+
+.yellow{
+  color: var(--primary-color);
+}
+
 .black{
   color: var(--black);
 }
+
 
 
 
@@ -135,9 +151,19 @@ p{
 
 }
 
+.react-datepicker-popper{
+  transform: translate(none);
+}
+
 .react-datepicker__header:not(.react-datepicker__header--has-time-select){
   width: 100%;
 }
+
+.react-datepicker-popper {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
 
 
 .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
@@ -147,3 +173,27 @@ p{
 }
 
 /* date-picker css */
+
+.white{
+  color: var(--white);
+}
+
+.grey{
+  color: var(--paragraph-color);
+}
+.button-color{
+  color: var(--button-color);
+}
+
+.bookingPage{
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+  url(././assets/Images/banner2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

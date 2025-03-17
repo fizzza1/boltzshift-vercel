@@ -5,6 +5,7 @@ import girl from "../../assets/Images/girl.png";
 import companyLogo from "../../assets/Images/companyLogo.png";
 import testimonialSign from "../../assets/testimonial-sign.svg";
 import Testimonials from "../../Components/Testimonials";
+import { Autoplay } from 'swiper/modules';
 
 function TestimonialPage() {
   return (
@@ -37,28 +38,39 @@ function TestimonialPage() {
     //     </div>
     //   </div>
     // </div>
-
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      scrollbar={{draggable:true}}
-      pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <Testimonials />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Testimonials />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Testimonials />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Testimonials />
-      </SwiperSlide>
-    </Swiper>
+    <div>
+      <h2 className="text-center uppercase tracking-wider mb-14">
+        Testimonials
+      </h2>
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={50}
+        slidesPerView={3}
+        scrollbar={{ draggable: true }}
+        pagination={{ clickable: true }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+        loop={true}
+        autoplay={{
+          delay: "3000",
+          disableOnInteraction: false,
+        }}
+        // loopedSlides={4} // Set this to the number of slides
+      >
+        <SwiperSlide>
+          <Testimonials />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Testimonials />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Testimonials />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Testimonials />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 }
 
