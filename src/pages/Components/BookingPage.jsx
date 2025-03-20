@@ -18,7 +18,8 @@ function BookingPage() {
   };
 
   return (
-    <div className="grid grid-cols-1 bookingPage text-center tracking-wider h-[100vh] pt-12">
+    <div className="flex flex-col bookingPage text-center tracking-wider h-[100vh] pt-12">
+      <div>
       <h2 className="yolk text-[52px]">
         Book a free 25 mins appointment with us
       </h2>
@@ -27,9 +28,10 @@ function BookingPage() {
         Ready to get started? Contact us today to schedule a consultation. We’re
         here to discuss your needs and how we can help your business grow!
       </p>
+      </div>
 
       <div className="mt-8 h-[100vh]">
-        <div className="flex flex-col mx-auto relative items-center w-full h-full">
+        <div className="flex mx-auto relative items-center">
           {level == 0 ? (
             <DatePicker
               selected={startDate}
@@ -37,7 +39,7 @@ function BookingPage() {
               minDate={new Date()}
               filterDate={isDateDisabled}
               open={calendarOpen}
-              showTimeSelect
+              // showTimeSelect
                className="mx-auto text-center block"
               // popperModifiers={[
               //   {
@@ -47,7 +49,7 @@ function BookingPage() {
               // ]}
             />
           ) : (
-            <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-xl">
+            <div className=" mx-auto p-6 bg-white shadow-lg rounded-xl">
               <form className="space-y-4">
                 <h2
                   className="text-xl text-start font-semibold mb-5 black "

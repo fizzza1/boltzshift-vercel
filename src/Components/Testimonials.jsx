@@ -24,7 +24,7 @@ function Testimonials() {
 
         <div className="flex justify-between">
           <div className="left-content flex gap-3">
-            <img src={girl} className="object-cover" alt="" />
+            <img src={girl} className="object-cover rounded" alt="" />
             <div>
               <h5 className="black font-semibold">Dora Dybala </h5>
               <p className="black">CEO & Founder of Company</p>

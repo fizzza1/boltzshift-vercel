@@ -23,8 +23,8 @@ function ServicesSection() {
     <p className="text-[12px] grey">Clients Satisfaction</p>
   </div>
 </div> */}
-      <div className="grid grid-cols-2 p-8 ps-0 pe-0 pb-0">
-        <div className="">
+      <div className=" lg:grid-cols-2 grid md:grid-cols-1 p-8 ps-0 pe-0 pb-0">
+        <div className="lg:mb-0 mb-10">
           <h2 className="w-[30%] mb-3">KNOW OUR SERVICES</h2>
           <p className="grey">Our Exceptional Services Design</p>
           <ul className="mt-10 flex flex-col gap-5 w-[90%]">
@@ -81,7 +81,7 @@ function ServicesSection() {
         </div>
 
         <div className="">
-          <div className="flex justify-between flex-wrap ">
+          <div className="flex gap-3 lg:justify-between flex-wrap ">
             <Card
               bgColor={"bg-[#39393B]"}
               cardTitle={"Web Apps"}

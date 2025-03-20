@@ -2,30 +2,33 @@ import React from "react";
 import HeroSectionBusinessImg from "/src/assets/Images/Hero-section-business-img.png";
 import VideoReel from "/src/assets/Images/video-reel.png";
 import ButtonArrow from "/src/assets/svg/link-arrow-right.svg";
+
 function HeroSection() {
   return (
-    <div className="grid grid-cols-1 mb-20">
-      <section className="flex flex-col items-center justify-center text-center px-6 h-screen w-full bg-[radial-gradient(circle,rgba(72,61,9,1)_4%,#07070A_47%)]
-">
-        <span className="flex gap-3">
-          <h1 className="uppercase">We are</h1>
+    <div className="grid grid-cols-1 lg:mb-1 sm:mb-10 md:mb-10">
+      <section className="HeroSection flex flex-col items-center justify-center text-center px-6 h-screen w-full">
+        <span className="flex flex-col sm:flex-row gap-3 sm:mb-6 mb-1 items-center justify-center text-center">
+          <div className="flex gap-3">
+          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px]">We are</h1>  
           <img
             src={HeroSectionBusinessImg}
-            className="rounded-full w-[236px] h-[130px]"
+            className="rounded-full w-[118px] h-[51px] md:w-[121px] md:h-[51px] lg:w-[236px]  lg:h-[130px]"
             alt=""
-          />
-          <h1 className="uppercase">Creative</h1>
+            />
+            </div>
+          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] ">Creative</h1>
         </span>
-        <span className="flex gap-4 mb-[43px] justify-center items-center">
-          <h2 className="uppercase font-normal text-[92px]">agencies</h2>
-          <img src={VideoReel} className="w-[271px] h-[110px]" alt="" />
-          <div className="flex justify-center flex-col">
-            <p className="grey text-[19px]">Where Quality </p>
-            <p className=" grey text-[18px]">Meets Affordability</p>
+
+        <span className="flex flex-col sm:flex-row gap-3 mb-[43px] justify-center items-center">
+          <h2 className="uppercase font-normal text-[28px] sm:text-[28px] md:text-[47px] lg:text-[90px]">agencies</h2>
+          <img src={VideoReel} className=" w-[110px] h-[41px] md:w-[121px] md:h-[51px] lg:w-[236px] lg:h-[130px]" alt="" />
+          <div className="hidden sm:flex justify-center flex-col">
+            <p className="grey text-[16px] md:text-[16px] lg:text-[19px]">Where Quality </p>
+            <p className=" grey text-[15px] md:text-[15px] lg:text-[18px]">Meets Affordability</p>
           </div>
         </span>
 
-        <p className="white mb-7 max-w-160 text-[20px]">
+        <p className="white mb-7 max-w-160 text-[14px] lg:text-[20px]">
           BoltzSift Studio is a design & develop agency of the future with 120+
           succeful projects in their portfolio
         </p>

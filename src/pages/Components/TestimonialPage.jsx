@@ -55,6 +55,11 @@ function TestimonialPage() {
           delay: "3000",
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          290: { slidesPerView: 1 },
+          768: { slidesPerView: 2 }, 
+          1024: { slidesPerView: 3 },
+        }}
         // loopedSlides={4} // Set this to the number of slides
       >
         <SwiperSlide>

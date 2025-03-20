@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WebsiteLogo from "/src/assets/Images/website-logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import HamburgerIcon from "/src/assets/svg/Mobile-Menu-toggle.svg"
+import Close from "/src/assets/svg/icone-fermer-et-x-jaune-removebg-preview.png"
 
 function Header({ scrollToSection }) {
   const [isOnclick, setOnclick] = useState("");
@@ -75,6 +76,7 @@ function Header({ scrollToSection }) {
             Plans
           </button>
         </nav>
+
         <div className="md:flex hidden justify-end">
           <button className="relative bg-[#FAD008] hover:bg-white button-color duration-500 font-medium text-[14px] cursor-pointer px-[26px] py-2.5 transition group overflow-hidden">
             <span className="relative z-[10] ">Get in touch</span>
@@ -84,16 +86,16 @@ function Header({ scrollToSection }) {
         </div>
         <div className="md:hidden flex justify-end relative">
           <button
-            className="text-3xl cursor-pointer z-50 fixed top-5 right-5"
+            className="text-3xl cursor-pointer z-50 fixed top-5"
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <img src={HamburgerIcon} /> : <FiMenu />}
+            {isMenuOpen ? <img src={Close} className="w-8" /> : <img src={HamburgerIcon} />}
           </button>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-[50vh] text-black bg-white shadow-lg flex justify-center items-center transition-transform duration-500 ease-in-out">
+        <div className="fixed top-0 left-0 w-full h-[50vh] text-black bg-white flex justify-center items-center">
           <nav className="flex flex-col justify-center xl:text-[14px] gap-7">
             <button
               className={`cursor-pointer ${
