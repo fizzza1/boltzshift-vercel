@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "tailwindcss";
 
 :root {
   --white: #fff;
@@ -107,77 +106,6 @@ p{
 
   border-radius: 8px;
 }
-
-
-/* date-picker css */
-
-
-.react-datepicker__day--selected{
-  background-color: var(--primary-color) !important;
-  color: var(--black) !important;
-  border-radius: 100% !important;
-  outline: none;
-}
-
-.react-datepicker__week{
-  font-family: "Clash Grotesk";
-}
-
-.react-datepicker__current-month{
-  font-family: "Clash Grotesk";
-  font-size: 54px !important;
-}
-
-.react-datepicker__header {
-  width: 600px;
-  /* height: 136px; */
-}
-
-.react-datepicker{
-  /* margin-top: 300px !important; */
-}
-
-.react-datepicker__input-container{
-  display: none !important;
-}
-
-
-.react-datepicker__day-names{
-  font-family: "Clash Grotesk";
-}
-
-.react-datepicker__time-list{
-  font-family: "Clash Grotesk";
-  font-size: 10px;
-}
-
-.react-datepicker-time__header{
-  font-family: "Clash Grotesk";
-
-}
-
-.react-datepicker-popper{
-  transform: translate(none);
-}
-
-.react-datepicker__header:not(.react-datepicker__header--has-time-select){
-  width: 100%;
-}
-
-.react-datepicker-popper {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-
-
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
-  background-color: #FAD008 !important;
-  color: black !important;
-  padding-top: 10px !important;
-}
-
-/* date-picker css */
 
 .white{
   color: var(--white);

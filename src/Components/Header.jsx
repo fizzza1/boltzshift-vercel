@@ -86,7 +86,7 @@ function Header({ scrollToSection }) {
         </div>
         <div className="md:hidden flex justify-end relative">
           <button
-            className="text-3xl cursor-pointer z-50 fixed top-5"
+            className="text-3xl cursor-pointer z-[1000] fixed top-5"
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <img src={Close} className="w-8" /> : <img src={HamburgerIcon} />}
@@ -95,7 +95,7 @@ function Header({ scrollToSection }) {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-[50vh] text-black bg-white flex justify-center items-center">
+        <div className="fixed top-0 z-[11] left-0 w-full h-[50vh] text-black bg-white flex justify-center items-center">
           <nav className="flex flex-col justify-center xl:text-[14px] gap-7">
             <button
               className={`cursor-pointer ${
