@@ -4,7 +4,7 @@ import CircleArrow from "/src/assets/svg/right-circle.svg";
 function Plan({ title, price, features, buttoncolor, bgcolor }) {
   return (
     <div
-      className={`border-2 mb-20 ${bgcolor} text-[#000000] px-8 py-[40px] sm:w-[80%] md:w-[48%] lg:w-[30%] `}
+      className={`border-2 mb-20 ${bgcolor} text-[#000000] Plan-Card_section px-8 py-[40px] sm:w-[80%] md:w-[48%] lg:w-[30%] `}
     >
       <p className="text-[16px] mb-4 font-medium uppercase">{title}</p>
       <p className="text-4xl font-bold mb-8">${price}</p>

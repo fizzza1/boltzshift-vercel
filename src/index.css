@@ -1,6 +1,7 @@
-@tailwind base;
+@import "tailwindcss";
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --white: #fff;
@@ -129,4 +130,132 @@ p{
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.react-datepicker__month-container{
+  font-family: 'Clash Grotesk', sans-serif !important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list{
+  font-family: 'Clash Grotesk', sans-serif !important;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+  background: #f3bf03d3!important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+  background: #f3c007d3 !important;
+}
+
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  padding: 9px 10px;
+  font-size: 12px;
+}
+
+.react-datepicker__header {
+  background: #ffffff !important;
+}
+
+.react-datepicker-time__header {
+  font-size: 14px !important;
+}
+
+@media (max-width: 640px){
+  .Plan-Card_section{
+    width: 100%;
+  }
+}
+
+@media (max-width: 973px){
+  .heroSectionText-1{
+    font-size: 65px;
+  }
+  .heroSectionText-2{
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 793px){
+  .heroSectionText-1{
+    font-size: 40px;
+  }
+  .heroSectionText-2{
+    font-size: 40px;
+  }
+  .Plancard{
+    padding: 0px ;
+  }
+}
+
+@media (max-width: 374px){
+  .heroSectionText-1{
+    font-size: 31px;
+  }
+  .heroSectionText-2{
+    font-size: 31px;
+  }
+  .Plancard{
+    padding: 0px ;
+  }
+}
+
+@media (max-width: 768px) {
+  .react-datepicker {
+    width: 100%;
+  }
+
+  .react-datepicker__time-container {
+    width: 100% !important;
+    position: static !important;
+  }
+
+  .react-datepicker__time {
+    width: 100%;
+  }
+  .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+    right: 0px !important;
+}
+.react-datepicker__month-container{
+  width: 100%;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select){
+  border-top: 1px solid #AEAEAE;
+}
+
+}
+
+.react-datepicker__day--selected, 
+.react-datepicker__day--in-selecting-range, 
+.react-datepicker__day--in-range, 
+.react-datepicker__month-text--selected, 
+.react-datepicker__month-text--in-selecting-range, 
+.react-datepicker__month-text--in-range, 
+.react-datepicker__quarter-text--selected, 
+.react-datepicker__quarter-text--in-selecting-range, 
+.react-datepicker__quarter-text--in-range, 
+.react-datepicker__year-text--selected, 
+.react-datepicker__year-text--in-selecting-range, 
+.react-datepicker__year-text--in-range {
+  background: #f3bf03d3 !important;
+  color: #000 !important; 
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  background: #f3c007d3 !important;
+  font-weight: 500!important;
+  color: #000 !important; 
+}
+
+.CeoName{
+  font-weight: 600;
+}
+
+.CeoImage{
+  object-fit: cover;
+  border-radius: 100px;
+  width: 47px;
+  
 }

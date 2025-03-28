@@ -8,15 +8,15 @@ function HeroSection() {
     <div className="grid grid-cols-1 lg:mb-1 sm:mb-10 md:mb-10">
       <section className="HeroSection flex flex-col items-center justify-center text-center px-6 h-screen w-full">
         <span className="flex flex-col sm:flex-row gap-3 sm:mb-6 mb-1 items-center justify-center text-center">
-          <div className="flex gap-3">
-          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px]">We are</h1>  
+          <div className="flex items-center gap-3">
+          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] heroSectionText-1">We are</h1>  
           <img
             src={HeroSectionBusinessImg}
             className="rounded-full w-[118px] h-[51px] md:w-[121px] md:h-[51px] lg:w-[236px]  lg:h-[130px]"
             alt=""
             />
             </div>
-          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] ">Creative</h1>
+          <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] heroSectionText-2 ">Creative</h1>
         </span>
 
         <span className="flex flex-col sm:flex-row gap-3 mb-[43px] justify-center items-center">
