@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import WebsiteLogo from "/src/assets/Images/website-logo.png";
-import { FiMenu, FiX } from "react-icons/fi";
 import HamburgerIcon from "/src/assets/svg/Mobile-Menu-toggle.svg"
 import Close from "/src/assets/svg/icone-fermer-et-x-jaune-removebg-preview.png"
 
 function Header({ scrollToSection }) {
   const [isOnclick, setOnclick] = useState("");
   const [isMenuOpen, setMenuOpen] = useState(false);
+  
   return (
-    <div className=" pt-[32px] bg-transparent bg-opacity-0 relative ">
+    <div className=" pt-[32px] bg-transparent h-[100px]">
       <div className="mx-auto flex justify-between items-center">
         <div className="text-2xl cursor-pointer font-bold w-[123px]">
           <img src={WebsiteLogo} alt="" />
@@ -19,7 +19,6 @@ function Header({ scrollToSection }) {
             className={`cursor-pointer  ${
               isOnclick == 1 ? "text-[#FAD008]" : ""
             }`}
-            // onClick={() => setOnclick(1)}
             onClick={() => {
               scrollToSection("hero-section");
               setOnclick(1);
@@ -31,7 +30,6 @@ function Header({ scrollToSection }) {
             className={`cursor-pointer ${
               isOnclick == 2 ? "text-[#FAD008]" : ""
             }`}
-            // onClick={() => setOnclick(2)}
             onClick={() => {
               scrollToSection("services-section");
               setOnclick(2);
@@ -43,7 +41,6 @@ function Header({ scrollToSection }) {
             className={`cursor-pointer ${
               isOnclick == 3 ? "text-[#FAD008]" : ""
             }`}
-            // onClick={() => setOnclick(3)}
             onClick={() => {
               scrollToSection("testimonials-section");
               setOnclick(3);
@@ -55,7 +52,6 @@ function Header({ scrollToSection }) {
             className={`cursor-pointer ${
               isOnclick == 4 ? "text-[#FAD008]" : ""
             }`}
-            // onClick={() => setOnclick(4)}
             onClick={() => {
               scrollToSection("booking-section");
               setOnclick(4);
@@ -67,7 +63,6 @@ function Header({ scrollToSection }) {
             className={`cursor-pointer ${
               isOnclick == 5 ? "text-[#FAD008]" : ""
             }`}
-            // onClick={() => setOnclick(5)}
             onClick={() => {
               scrollToSection("plans-section");
               setOnclick(5);
@@ -89,13 +84,14 @@ function Header({ scrollToSection }) {
             className="text-3xl cursor-pointer z-[1000] fixed top-5"
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <img src={Close} className="w-8" /> : <img src={HamburgerIcon} />}
+            {isMenuOpen ? <img src={Close} className="w-8" /> : <img src={HamburgerIcon} className="mt-3.5" />}
           </button>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="fixed top-0 z-[11] left-0 w-full h-[50vh] text-black bg-white flex justify-center items-center">
+        <div className={`fixed top-0 z-[11] left-0 w-full h-[50vh] text-black bg-white flex justify-center items-center 
+          ${isMenuOpen ? "menu-open" : "menu-close"} ${isMenuOpen ? "visible" : "invisible"}`}>
           <nav className="flex flex-col justify-center xl:text-[14px] gap-7">
             <button
               className={`cursor-pointer ${

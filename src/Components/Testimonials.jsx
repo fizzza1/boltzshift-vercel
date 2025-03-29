@@ -1,6 +1,4 @@
 import React from "react";
-// import girl from "../assets/Images/girl.png";
-// import companyLogo from "../assets/Images/companyLogo.png";
 import testimonialSign from "../assets/testimonial-sign.svg";
 import DummyImage from "/src/assets/Images/dummy-img.jpg"
 
@@ -8,18 +6,18 @@ import DummyImage from "/src/assets/Images/dummy-img.jpg"
 
 function Testimonials({description, img, name, companyName}) {
   return (
-<div>
+<div className=" h-100">
     
-    <div className="grid grid-cols-1 mb-30">
-      <div className="bg-white flex flex-col justify-center p-[30px] mt-6">
+    <div className="grid grid-cols-1 ">
+      <div className="flex  flex-col justify-between  p-[30px] h-100 mt-6 bg-white">
         <div className=" flex justify-end mt-[-50px]">
           <img className="w-20 " src={testimonialSign} alt="" />
         </div>
-        <p className="mb-[64px] black">
+
+        <div className="flex flex-col h-100 justify-between pb-5 pt-3">
+        <p className="black ">
           {description}
         </p>
-
-        <div className="flex justify-between">
           <div className="left-content flex gap-3">
             <img src={img ? img : DummyImage} className="object-cover rounded CeoImage" alt="" />
             <div>
@@ -28,6 +26,7 @@ function Testimonials({description, img, name, companyName}) {
             </div>
           </div>
         </div>
+
       </div>
     </div>
 </div>

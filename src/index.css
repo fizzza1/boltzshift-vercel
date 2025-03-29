@@ -5,59 +5,90 @@
 
 :root {
   --white: #fff;
-  --black: #07070A;
-  --primary-color: #FAD008;
-  --paragraph-color:#A5A5A5;
-  --button-color:#39393B;
-
+  --black: #07070a;
+  --primary-color: #fad008;
+  --paragraph-color: #a5a5a5;
+  --button-color: #39393b;
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #07070A;
+  background-color: #07070a;
   color: #ffffff;
-  font-family: 'Clash Grotesk', sans-serif;
+  font-family: "Clash Grotesk", sans-serif;
 }
 
-h1{
+/* keyframes start */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.menu-open {
+  animation: slideIn 0.2s ease-in-out;
+  visibility: visible;
+}
+
+.menu-close {
+  animation: slideOut 0.8s ease-in-out;
+}
+
+/* keyframes end */
+
+h1 {
   font-weight: bold;
   font-size: 96px;
 }
 
-h2{
+h2 {
   font-weight: bold;
-/* <<<<<<< HEAD */
+  /* <<<<<<< HEAD */
   /* font-size: 52px; */
-/* ======= */
+  /* ======= */
   font-size: 28px;
-/* >>>>>>> origin/fizza */
+  /* >>>>>>> origin/fizza */
 }
 
-h3{
+h3 {
   font-weight: bold;
   font-size: 28px;
 }
 
-
-h4{
+h4 {
   font-weight: bold;
   font-size: 32px;
 }
 
-h5{
+h5 {
   font-weight: 400;
   font-size: 15px;
 }
 
-h6{
+h6 {
   font-weight: 400;
   font-size: 24px;
 }
 
-p{
+p {
   font-weight: 400;
   font-weight: 18px;
 }
@@ -67,62 +98,62 @@ p{
   z-index: 1000;
 }
 
-
-.yolk{
+.yolk {
   color: var(--primary-color);
 }
 
-.dull{
+.dull {
   color: var(--paragraph-color);
 }
 
-
-.yellow{
+.yellow {
   color: var(--primary-color);
 }
 
-.black{
+.black {
   color: var(--black);
 }
 
-.HeroSection{
-  background-image: url("/src/assets/Images/backgroundGradient.png");
+.HeroSection {
+  /* background-image: url("/src/assets/Images/backgroundGradient.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 ::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #FFD700, #FFA500, #FFCC00);
+  background: linear-gradient(45deg, #ffd700, #ffa500, #ffcc00);
 
   border-radius: 8px;
 }
 
-.white{
+.white {
   color: var(--white);
 }
 
-.grey{
+.grey {
   color: var(--paragraph-color);
 }
-.button-color{
+.button-color {
   color: var(--button-color);
 }
 
-.bookingPage{
-  background-image: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-  url(././assets/Images/banner2.png);
+.bookingPage {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(././assets/Images/banner2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,24 +163,45 @@ p{
   white-space: nowrap;
 }
 
-.react-datepicker__month-container{
-  font-family: 'Clash Grotesk', sans-serif !important;
+.react-datepicker__month-container {
+  font-family: "Clash Grotesk", sans-serif !important;
 }
 
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list{
-  font-family: 'Clash Grotesk', sans-serif !important;
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list {
+  font-family: "Clash Grotesk", sans-serif !important;
 }
 
-.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
-  background: #f3bf03d3!important;
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background: #f3bf03d3 !important;
 }
 
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
   background: #f3c007d3 !important;
 }
 
-
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item {
   padding: 9px 10px;
   font-size: 12px;
 }
@@ -160,50 +212,64 @@ p{
 
 .react-datepicker-time__header {
   font-size: 14px !important;
+  font-family: "Clash Grotesk", sans-serif !important;
 }
 
-@media (max-width: 640px){
-  .Plan-Card_section{
+@media (max-width: 640px) {
+  .Plan-Card_section {
     width: 100%;
   }
+  .heroSectionText-3 {
+    font-size: 40px !important;
+  }
 }
 
-@media (max-width: 973px){
-  .heroSectionText-1{
+@media (max-width: 973px) {
+  .heroSectionText-1 {
     font-size: 65px;
   }
-  .heroSectionText-2{
+  .heroSectionText-2 {
     font-size: 65px;
   }
 }
 
-@media (max-width: 793px){
-  .heroSectionText-1{
+@media (max-width: 793px) {
+  .heroSectionText-1 {
     font-size: 40px;
   }
-  .heroSectionText-2{
+  .heroSectionText-2 {
     font-size: 40px;
   }
-  .Plancard{
-    padding: 0px ;
+  .Plancard {
+    padding: 0px;
+  }
+  .heroSectionText-3 {
+    font-size: 30px !important;
+  }
+  .heroSectionPara {
+    font-size: 19px;
   }
 }
 
-@media (max-width: 374px){
-  .heroSectionText-1{
+@media (max-width: 374px) {
+  .heroSectionText-1 {
     font-size: 31px;
   }
-  .heroSectionText-2{
+  .heroSectionText-2 {
     font-size: 31px;
   }
-  .Plancard{
-    padding: 0px ;
+  .Plancard {
+    padding: 0px;
   }
 }
 
 @media (max-width: 768px) {
   .react-datepicker {
     width: 100%;
+  }
+
+  .card:hover {
+    background-color: none;
   }
 
   .react-datepicker__time-container {
@@ -214,48 +280,76 @@ p{
   .react-datepicker__time {
     width: 100%;
   }
-  .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  .react-datepicker__navigation--next--with-time:not(
+      .react-datepicker__navigation--next--with-today-button
+    ) {
     right: 0px !important;
-}
-.react-datepicker__month-container{
-  width: 100%;
+  }
+  .react-datepicker__month-container {
+    width: 100%;
+  }
+
+  .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+    border-top: 1px solid #aeaeae;
+  }
 }
 
-.react-datepicker__header:not(.react-datepicker__header--has-time-select){
-  border-top: 1px solid #AEAEAE;
-}
-
-}
-
-.react-datepicker__day--selected, 
-.react-datepicker__day--in-selecting-range, 
-.react-datepicker__day--in-range, 
-.react-datepicker__month-text--selected, 
-.react-datepicker__month-text--in-selecting-range, 
-.react-datepicker__month-text--in-range, 
-.react-datepicker__quarter-text--selected, 
-.react-datepicker__quarter-text--in-selecting-range, 
-.react-datepicker__quarter-text--in-range, 
-.react-datepicker__year-text--selected, 
-.react-datepicker__year-text--in-selecting-range, 
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
 .react-datepicker__year-text--in-range {
   background: #f3bf03d3 !important;
-  color: #000 !important; 
+  color: #000 !important;
 }
 
-.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
   background: #f3c007d3 !important;
-  font-weight: 500!important;
-  color: #000 !important; 
+  font-weight: 500 !important;
+  color: #000 !important;
 }
 
-.CeoName{
+.CeoName {
   font-weight: 600;
 }
 
-.CeoImage{
+.CeoImage {
   object-fit: cover;
   border-radius: 100px;
   width: 47px;
-  
+}
+
+.card:hover {
+  background-color: #fad008;
+  color: black;
+}
+
+.card:hover h2,
+.card:hover p {
+  color: inherit;
+}
+
+.plan-section-titel {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.plan-section-price {
+  font-weight: 800;
+}
+
+.heroSectionText-3 {
+  font-weight: 400;
+  font-size: 60px;
 }

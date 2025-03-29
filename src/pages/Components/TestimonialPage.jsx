@@ -11,24 +11,24 @@ import { Autoplay } from "swiper/modules";
 
 function TestimonialPage() {
   return (
-    <div>
+    <div className="mb-20">
       <h2 className="text-center uppercase tracking-wider mb-14">
       Customer Experiences
 
       </h2>
       <Swiper
-        modules={[Autoplay]}
+        // modules={[Autoplay]}
         spaceBetween={50}
         slidesPerView={3}
         scrollbar={{ draggable: true }}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        loop={true}
-        autoplay={{
-          delay: "3000",
-          disableOnInteraction: false,
-        }}
+        // loop={true}
+        // autoplay={{
+        //   delay: "3000",
+        //   disableOnInteraction: false,
+        // }}
         breakpoints={{
           290: { slidesPerView: 1 },
           768: { slidesPerView: 2 },

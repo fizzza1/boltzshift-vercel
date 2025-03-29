@@ -1,11 +1,10 @@
 import React from "react";
 import CardArrow from "/src/assets/svg/cardArrow.svg";
-import Spider from "../assets/Images/spider.png";
 
 function Card({ bgColor, cardTitle, cardPara, imageSrc }) {
   return (
     <div
-      className={`group ${bgColor} md:w-[60%] lg:w-[49%]  p-[32px] mb-5 transition-all cursor-pointer duration-300 ease-in-out hover:text-[#ffffff] hover:bg-[#FAD008]`}
+        className={`card group ${bgColor} md:w-[60%] lg:w-[49%] p-[32px] mb-5 transition-all cursor-pointer duration-300 ease-in-out `}
     >
       <div className="flex justify-between mb-[34px]">
         <img src={imageSrc} className="w-[64px]" />
@@ -19,13 +18,12 @@ function Card({ bgColor, cardTitle, cardPara, imageSrc }) {
   transition-all duration-600 ease-in-out"
         />
 
-        {/* <img src={Spider} alt="" className="opacity-0 w-[100px] flex justify-start mt-[-32px] ms-[280px] items-start group-hover:opacity-100 transition-opacity duration-300" /> */}
       </div>
       <div>
-        <h2 className="mb-5 tracking-wide white group-hover:text-black duration-300">
+        <h2 className="mb-5 tracking-wide white duration-300">
           {cardTitle}
         </h2>
-        <p className="white group-hover:text-black duration-300">{cardPara}</p>
+        <p className="white duration-300">{cardPara}</p>
       </div>
     </div>
   );

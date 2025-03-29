@@ -10,22 +10,6 @@ function Home() {
   // Create a ref for the PlansSection
   const plansRef = useRef(null);
 
-  // Function to scroll smoothly
-  // const scrollToPlans = () => {
-  //   if (plansRef.current) {
-  //     plansRef.current.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start", // Aligns to the top
-  //     });
-  //   }
-  // };
-
-  // const scrollToPlans = (sectionName) => {
-  //   document.getElementById(sectionName).scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // };
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -40,7 +24,9 @@ function Home() {
 
   return (
     <div className="px-6 ">
+      <div>
       <Header scrollToSection={scrollToSection} />
+      </div>
       <div id="hero-section">
         <HeroSection />
       </div>

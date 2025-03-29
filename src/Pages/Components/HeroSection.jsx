@@ -3,10 +3,12 @@ import HeroSectionBusinessImg from "/src/assets/Images/Hero-section-business-img
 import VideoReel from "/src/assets/Images/video-reel.png";
 import ButtonArrow from "/src/assets/svg/link-arrow-right.svg";
 
+
+
 function HeroSection() {
   return (
-    <div className="grid grid-cols-1 lg:mb-1 sm:mb-10 md:mb-10">
-      <section className="HeroSection flex flex-col items-center justify-center text-center px-6 h-screen w-full">
+    <div className="grid grid-cols-1 lg:mb-10 sm:mb-10 md:mb-10">
+      <section className="HeroSection flex flex-col items-center justify-center text-center px-6  h-[calc(100vh-100px)] w-full">
         <span className="flex flex-col sm:flex-row gap-3 sm:mb-6 mb-1 items-center justify-center text-center">
           <div className="flex items-center gap-3">
           <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] heroSectionText-1">We are</h1>  
@@ -19,8 +21,8 @@ function HeroSection() {
           <h1 className="uppercase text-[33px] sm:text-[33px] md:text-[47px] lg:text-[90px] heroSectionText-2 ">Creative</h1>
         </span>
 
-        <span className="flex flex-col sm:flex-row gap-3 mb-[43px] justify-center items-center">
-          <h2 className="uppercase font-normal text-[28px] sm:text-[28px] md:text-[47px] lg:text-[90px]">agencies</h2>
+        <span className="flex flex-col sm:flex-row gap-3 mb-[30px] justify-center items-center">
+          <h2 className="uppercase font-normal text-[28px] sm:text-[28px] md:text-[47px] lg:text-[90px] heroSectionText-3 ">agencies</h2>
           <img src={VideoReel} className=" w-[110px] h-[41px] md:w-[121px] md:h-[51px] lg:w-[236px] lg:h-[130px]" alt="" />
           <div className="hidden sm:flex justify-center flex-col">
             <p className="grey text-[16px] md:text-[16px] lg:text-[19px]">Where Quality </p>
@@ -28,7 +30,7 @@ function HeroSection() {
           </div>
         </span>
 
-        <p className="white mb-7 max-w-160 text-[14px] lg:text-[20px]">
+        <p className="white heroSectionPara mb-7 max-w-160 text-[14px] lg:text-[20px]">
           BoltzSift Studio is a design & develop agency of the future with 120+
           succeful projects in their portfolio
         </p>
