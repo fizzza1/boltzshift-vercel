@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import JapaneseCeo from "/src/assets/Images/CEO.Takuya.jpg";
 import UAECeo from "/src/assets/Images/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg"
-import testimonialSign from "../../assets/testimonial-sign.svg";
+// import testimonialSign from "../../assets/testimonial-sign.svg";
 import Testimonials from "../../Components/Testimonials";
 import { Autoplay } from "swiper/modules";
 
