@@ -4,7 +4,7 @@ import HeroSection from "../Components/HeroSection";
 import ServicesSection from "../Components/ServicesSection";
 import PlansSection from "../Components/PlansSection";
 import Footer from "../../Components/Footer";
-import TestimonialPage from "../Components/TestimonialPage";
+import TestimonialPage from "../../pages/Components/TestimonialPage";
 import BookingPage from "../Components/BookingPage";
 function Home() {
   // Create a ref for the PlansSection
