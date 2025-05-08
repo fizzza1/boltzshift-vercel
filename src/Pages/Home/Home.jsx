@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../../Components/Header";
-import HeroSection from "../Components/HeroSection";
-import ServicesSection from "../Components/ServicesSection";
-import PlansSection from "../Components/PlansSection";
+import HeroSection from "../../pages/Components/HeroSection";
+import ServicesSection from "../../pages/Components/ServicesSection";
+import PlansSection from "../../pages/Components/PlansSection";
 import Footer from "../../Components/Footer";
-import TestimonialPage from "../Components/TestimonialPage";
-import BookingPage from "../Components/BookingPage";
+import TestimonialPage from "../../pages/Components/TestimonialPage";
+import BookingPage from "../../pages/Components/BookingPage";
 
 function Home() {
   // Create a ref for the PlansSection
