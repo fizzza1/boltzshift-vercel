@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
-import Header from "../../Components/Header";
-import HeroSection from "../Components/HeroSection";
-import ServicesSection from "../Components/ServicesSection";
-import PlansSection from "../Components/PlansSection";
-import Footer from "../../Components/Footer";
-import TestimonialPage from "../../pages/Components/TestimonialPage";
-import BookingPage from "../Components/BookingPage";
+import Header from "../../../Components/Header";
+import Footer from "../../../Components/Footer";
+import HeroSection from "../../../pages/Components/HeroSection";
+import ServicesSection from "../../../pages/Components/ServicesSection";
+import PlansSection from "../../../pages/Components/PlansSection";
+import TestimonialPage from "../../../pages/Components/TestimonialPage";
+import BookingPage from "../../../pages/Components/BookingPage";
+
 function Home() {
   // Create a ref for the PlansSection
   const plansRef = useRef(null);
