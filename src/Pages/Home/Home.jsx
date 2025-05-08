@@ -6,10 +6,10 @@ import PlansSection from "../../Components/PlansSection"; // PlansSection from C
 import Footer from "../../Components/Footer"; // Footer component
 import TestimonialPage from "../../Components/TestimonialPage"; // TestimonialPage from Components folder
 import BookingPage from "../../Components/BookingPage"; // BookingPage from Components folder
-
 function Home() {
   // Create a ref for the PlansSection
   const plansRef = useRef(null);
+
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -20,11 +20,12 @@ function Home() {
       });
     }
   };
+  
 
   return (
     <div className="px-6">
       <div>
-        <Header scrollToSection={scrollToSection} />
+      <Header scrollToSection={scrollToSection} />
       </div>
       <div id="hero-section">
         <HeroSection />
@@ -42,7 +43,7 @@ function Home() {
         <BookingPage />
       </div>
 
-      <div id="plans-section" ref={plansRef}>
+      <div id="plans-section">
         <PlansSection />
       </div>
 
