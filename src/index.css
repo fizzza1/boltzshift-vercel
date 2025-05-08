@@ -61,11 +61,7 @@ h1 {
 
 h2 {
   font-weight: bold;
-  /* <<<<<<< HEAD */
-  /* font-size: 52px; */
-  /* ======= */
   font-size: 28px;
-  /* >>>>>>> origin/fizza */
 }
 
 h3 {

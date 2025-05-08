@@ -1,8 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import girl from "../../assets/Images/girl.png";
-import companyLogo from "../../assets/Images/companyLogo.png";
 import JapaneseCeo from "/src/assets/Images/CEO.Takuya.jpg";
 import UAECeo from "/src/assets/Images/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg"
 import testimonialSign from "../../assets/testimonial-sign.svg";
@@ -17,24 +15,24 @@ function TestimonialPage() {
 
       </h2>
       <Swiper
-        // modules={[Autoplay]}
+        modules={[Autoplay]}
         spaceBetween={50}
         slidesPerView={3}
         scrollbar={{ draggable: true }}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        // loop={true}
-        // autoplay={{
-        //   delay: "3000",
-        //   disableOnInteraction: false,
-        // }}
+        loop={true}
+        autoplay={{
+          delay: "3000",
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           290: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        // loopedSlides={4} // Set this to the number of slides
+        loopedSlides={4} // Set this to the number of slides
       >
         {/* <SwiperSlide>
           <Testimonials description="Working with [Your Name] was a fantastic experience. We needed a custom e-commerce platform, and they delivered exactly what we envisioned. The team was super professional, communicative, and quick to adapt to feedback. Everything—from design to functionality—was executed perfectly. Looking forward to future projects together!"
