@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../Components/Header"; 
-import HeroSection from "/src/pages/Components/HeroSection.jsx"; 
+import HeroSection from "/src/Pages/Components/HeroSection.jsx"; 
 import ServicesSection from "/src/pages/Components/ServicesSection.jsx"; 
 import PlansSection from "../../pages/Components/PlansSection"; 
 import Footer from "../../Components/Footer"; 
