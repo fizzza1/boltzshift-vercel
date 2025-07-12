@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import Header from "../../Components/Header"; 
-import HeroSection from "../../Pages/Components/HeroSection"; 
-import ServicesSection from "../../Pages/Components/ServicesSection"; 
-import PlansSection from "../../Pages/Components/PlansSection"; 
-import Footer from "../../Components/Footer"; 
-import TestimonialPage from "../../Pages/Components/TestimonialPage"; // TestimonialPage from Components folder
-import BookingPage from "../../Pages/Components/BookingPage"; //                                                                                                                                                                                     ,nmn,,,BookingPage from Components folder
+import Header from "/src/Components/Header.jsx"; 
+import HeroSection from "/src/Pages/Components/HeroSection.jsx"; 
+import ServicesSection from "/src/Pages/Components/ServicesSection.jsx"; 
+import PlansSection from "/src/Pages/Components/PlansSection.jsx"; 
+import Footer from "/src/Components/Footer.jsx"; 
+import TestimonialPage from "/src/Pages/Components/TestimonialPage.jsx"; // TestimonialPage from Components folder
+import BookingPage from "/src/Pages/Components/BookingPage.jsx"; //                                                                                                                                                                                     ,nmn,,,BookingPage from Components folder
 
 
 function Home() {
