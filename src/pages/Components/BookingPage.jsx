@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
 
 const BookingPage = () => {
@@ -24,7 +24,7 @@ const BookingPage = () => {
         here to discuss your needs and help your business grow!
       </p>
 
-      <div className="mt-8 w-full max-w-md bg-white text-black p-6 rounded-lg shadow-lg">
+      <div className="mt-8 w-full max-w-md bg-white text-black sm:p-6 p-2 rounded-lg shadow-lg">
         <AnimatePresence mode="wait">
           {level === 0 ? (
             <motion.div
